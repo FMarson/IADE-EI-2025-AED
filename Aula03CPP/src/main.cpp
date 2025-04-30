@@ -20,7 +20,7 @@ int potencia_recursiva(int x, int y){
         return x * potencia_recursiva(x, y - 1);
 }
 
-int main(int argc, char *argv[])
+int main()
 {
     int x = 10;
     int y = 3;
