@@ -9,6 +9,10 @@ int main()
     lista.insereInicio(30);
     lista.imprime();
 
+    Nodo* nodo = lista.buscaPosicao(0);
+    cout << "Nodo: " << nodo->dado << endl;
+
+
 
 
     return 0;
