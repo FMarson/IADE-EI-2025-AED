@@ -1,4 +1,4 @@
-#include "ListaSimples.h"
+#include "Fila.h"
 
 int main()
 {
@@ -12,6 +12,23 @@ int main()
     Nodo* nodo = lista.buscaPosicao(0);
     cout << "Nodo: " << nodo->dado << endl;
 
+
+    Fila fila;
+    fila.insere(10);
+    fila.insere(20);
+    fila.insere(30);
+
+    fila.imprimeInicio();
+    cout << "Tamanho da fila: " << fila.tamanhoFila() << endl;
+    Nodo* removido = fila.remove();
+    
+    if(removido != nullptr)
+        cout << "Removido: " << removido->dado << endl;
+
+    fila.imprimeInicio();
+    cout << "Tamanho da fila: " << fila.tamanhoFila() << endl;
+
+    fila.limpa();
 
 
 

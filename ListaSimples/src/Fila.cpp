@@ -27,3 +27,7 @@ bool Fila::vazia(){
 int Fila::tamanhoFila(){
 
 }
+
+void Fila::limpa(){
+
+}

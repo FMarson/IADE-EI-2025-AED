@@ -10,4 +10,5 @@ public:
     Nodo* imprimeInicio();
     bool vazia();
     int tamanhoFila();
+    void limpa();
 };
