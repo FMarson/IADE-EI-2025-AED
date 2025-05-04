@@ -1,36 +1,29 @@
-#include "Fila.h"
+#include "..\include\ListaSimplesConsole.h"
 
 int main()
 {
-    ListaSimples lista;
+    ListaSimplesConsole lista;
     
-    lista.insereInicio(10);
-    lista.insereInicio(20);
-    lista.insereInicio(30);
-    lista.imprime();
+    lista.inserirInicio(20);
+    lista.inserirInicio(10);
+    lista.inserirFim(30);
 
-    Nodo* nodo = lista.buscaPosicao(0);
-    cout << "Nodo: " << nodo->dado << endl;
+    lista.imprimir();
 
+    lista.inserirPosicao(25, 2);
+    lista.imprimir();
 
-    Fila fila;
-    fila.insere(10);
-    fila.insere(20);
-    fila.insere(30);
+    lista.remover(25);
+    lista.imprimir();
 
-    fila.imprimeInicio();
-    cout << "Tamanho da fila: " << fila.tamanhoFila() << endl;
-    Nodo* removido = fila.remove();
+    lista.removerInicio();
+    lista.imprimir();
+
+    lista.removerFim();
+    lista.imprimir();
+
+    lista.limpar();
+    lista.imprimir();
     
-    if(removido != nullptr)
-        cout << "Removido: " << removido->dado << endl;
-
-    fila.imprimeInicio();
-    cout << "Tamanho da fila: " << fila.tamanhoFila() << endl;
-
-    fila.limpa();
-
-
-
     return 0;
 }

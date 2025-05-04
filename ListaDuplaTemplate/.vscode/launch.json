@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Programming/IADE-EI-2025-AED/ListaSimples/src",
-      "program": "c:/Programming/IADE-EI-2025-AED/ListaSimples/src/build/Debug/outDebug",
+      "cwd": "c:/Programming/IADE-EI-2025-AED/ListaDuplaTemplate/source",
+      "program": "c:/Programming/IADE-EI-2025-AED/ListaDuplaTemplate/source/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
