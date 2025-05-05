@@ -1,4 +1,3 @@
-#include <iostream>
 #include "..\include\ListaDuplaTemplateConsole.h"
 
 int main() {
@@ -11,12 +10,12 @@ int main() {
     lista.imprimir();
 
     int removido = lista.removerInicio();
-    std::cout << "Removido inicio: " << removido << std::endl;
+    cout << "Removido inicio: " << removido << std::endl;
 
     lista.imprimir();
 
     removido = lista.removerFim();
-    std::cout << "Removido fim: " << removido << std::endl;
+    cout << "Removido fim: " << removido << std::endl;
 
     lista.imprimir();
 
