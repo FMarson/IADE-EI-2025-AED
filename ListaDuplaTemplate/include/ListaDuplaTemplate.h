@@ -8,6 +8,10 @@ struct NodoDuplo {
     NodoDuplo<T>* anterior;
 };
 
+
+NodoDuplo<int> nodoInt;
+NodoDuplo<double> nodoDouble;
+
 template <typename T>
 class ListaDuplaTemplate {
 protected:

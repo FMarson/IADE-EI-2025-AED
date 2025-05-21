@@ -6,42 +6,42 @@
 template <typename T>
 class Fila {
 protected:
-    ListaDuplaTemplate<T> lista;
+    ListaDuplaTemplate<T> fila;
 
 public:
     void inserir(const T& dado) {
-        lista.inserirFim(dado);
+        fila.inserirFim(dado);
     }
 
     T remover() {
-        return lista.removerInicio();
+        return fila.removerInicio();
     }
 
     T consultar() {
-        if (lista.tamanhoLista() == 0) {
+        if (fila.tamanhoLista() == 0) {
             return T{};
         }
-        return lista.buscarPosicao(0);
+        return fila.buscarPosicao(0);
     }
 
     bool vazia() {
-        return lista.tamanhoLista() == 0;
+        return fila.tamanhoLista() == 0;
     }
 
     int tamanho() {
-        return lista.tamanhoLista();
+        return fila.tamanhoLista();
     }
 
     bool ocorreuErro() {
-        return lista.ocorreuErro();
+        return fila.ocorreuErro();
     }
 
     void limpar() {
-        lista.limpar();
+        fila.limpar();
     }
 
     NodoDuplo<T>* getInicio() {
-        return lista.getInicio();
+        return fila.getInicio();
     }
 };
 

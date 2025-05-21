@@ -33,9 +33,12 @@ void ListaSimples::inserirFim(int dado){
     novo->proximo = nullptr;
     if (fim != nullptr)
         fim->proximo = novo;
+   
     fim = novo;
+    
     if (inicio == nullptr)
         inicio = novo;
+        
     tamanho++;
 }
 
